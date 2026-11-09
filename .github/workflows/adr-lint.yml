@@ -1,0 +1,38 @@
+name: Validate ADR Structure
+
+on:
+  pull_request:
+    paths:
+      - 'docs/adr/**'
+
+jobs:
+  lint-adr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check ADR Filename & Required Sections
+        run: |
+          for file in $(git diff --name-only --diff-filter=AM origin/${{ github.base_ref }}...HEAD -- 'docs/adr/*.md'); do
+            echo "Validating $file..."
+            
+            # Skip template files
+            if [[ "$file" == *"templates/"* ]]; then continue; fi
+
+            # Enforce 4-digit prefix naming convention (e.g., 0001-ai-gateway.md)
+            filename=$(basename "$file")
+            if ! [[ "$filename" =~ ^[0-9]{4}-[a-z0-9-]+\.md$ ]]; then
+              echo "❌ Error: $filename must match format XXXX-kebab-case-title.md"
+              exit 1
+            fi
+
+            # Enforce mandatory headings
+            for section in "## 1. Context" "## 2. Decision Drivers" "## 3. Considered Options" "## 4. Decision" "## 5. Consequences"; do
+              if ! grep -q "$section" "$file"; then
+                echo "❌ Error: $file is missing required section: '$section'"
+                exit 1
+              fi
+            done
+          done
+          echo "✅ All ADR checks passed!"

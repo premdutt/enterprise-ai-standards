@@ -1,0 +1,5 @@
+# Default owners for the repository
+* @your-org/enterprise-architecture
+
+# Require Security, Platform, and FinOps sign-off on all AI ADRs
+/docs/adr/ @your-org/enterprise-architecture @your-org/infosec @your-org/finops

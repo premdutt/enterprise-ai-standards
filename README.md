@@ -12,8 +12,8 @@ This repository contains the approved architectural standards and technical deci
 
 | ADR | Title | Status | Domain |
 | :--- | :--- | :--- | :--- |
-| [ADR-0001](docs/adr/0001-centralized-ai-gateway.md) | Centralized Enterprise AI Gateway | Proposed | Platform & Access |
-| [ADR-0002](docs/adr/0002-data-privacy-and-pii-redaction.md) | Data Privacy & PII Redaction | Proposed | Security & Compliance |
-| ADR-0003 | RAG & Knowledge Grounding | Planned | Data & Retrieval |
-| ADR-0004 | AI Evaluation & Runtime Guardrails | Planned | Quality & Safety |
-| ADR-0005 | AI Observability, Tracing & FinOps | Planned | Operations & Cost |
+| [ADR-0001](docs/adr/0001-ai-centralized-ai-gateway.md) | Centralized Enterprise AI Gateway | Proposed | Platform & Access |
+| [ADR-0002](docs/adr/0002-ai-data-privacy-and-pii-redaction.md) | Data Privacy & PII Redaction | Proposed | Security & Compliance |
+| [ADR-0003](docs/adr/0003-ai-rag-and-knowledge-grounding.md) | RAG & Knowledge Grounding | Proposed | Data & Retrieval |
+| [ADR-0004](docs/adr/0004-ai-evaluation-and-runtime-guardrails.md) | AI Evaluation & Runtime Guardrails | Planned | Quality & Safety |
+| [ADR-0005](docs/adr/0005-ai-observability-tracing-and-finops.md) | AI Observability, Tracing & FinOps | Planned | Operations & Cost |

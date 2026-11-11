@@ -1,6 +1,6 @@
 # Enterprise AI Architecture Decision Records (ADRs)
 
-This repository contains the approved architectural standards and technical decisions governing AI implementation across the organization.
+This repository contains the proposed architectural standards and technical decisions governing AI implementation across the organization.
 
 ## Vision
 Apply AI to meaningful enterprise problems through trusted, human-centered capabilities that are secure by design, grounded in governed enterprise data, and reusable across portfolios. Enable teams to move from experimentation to measurable production outcomes on a shared, provider-portable platform, with risk-appropriate evaluation, oversight, and continuous monitoring throughout the lifecycle.

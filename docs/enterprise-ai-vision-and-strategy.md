@@ -87,14 +87,20 @@ For each strategic or declining capability, document an owner, support posture, 
 
 Decision rights should be documented before production governance is operationalized. In particular, the organization must name the approving authority for each risk class and distinguish architecture conformance from security approval, legal review, and business risk acceptance.
 
-## Use-Case Lifecycle
+## Use-Case Intake, Prioritization, and Lifecycle
 
-1. **Propose:** Record the business problem, owner, users, expected outcome, baseline, and whether AI is necessary.
+Use one value framework from intake through production: estimate value to compare opportunities, then measure actual outcomes at lifecycle gates to decide whether to scale, fix, or stop. Prioritization considers value, effort, risk, and data readiness; it does not replace risk controls, approval requirements, or the need to demonstrate that AI is more suitable than a simpler alternative.
+
+For practical intake fields, valuation guidance, prioritization, and pilot measurement, see the [AI use-case intake and value realization playbook](ai-use-case-intake-and-value-realization.md).
+
+### Lifecycle Gates
+
+1. **Propose and prioritize:** Complete the value-led intake, name an accountable owner, and establish an initial priority.
 2. **Classify:** Determine risk, data sensitivity, applicable obligations, degree of autonomy, affected parties, and reversibility.
 3. **Design:** Select an appropriate pattern and platform; assess build-versus-buy, data and integration dependencies, security, cost, and exit options.
 4. **Build and evaluate:** Develop against approved interfaces and datasets; test quality, safety, security, privacy, and operational behavior to criteria set for the use case.
 5. **Approve for production:** Confirm accountable ownership, required reviews, evaluation evidence, controls, human oversight, observability, incident response, and rollback readiness.
-6. **Operate and monitor:** Track business outcomes, quality, safety, reliability, usage, and spend. Investigate incidents and reassess after material changes.
+6. **Operate and monitor:** Track estimated and realized business value, adoption, quality, safety, reliability, usage, and spend. Apply the scale, fix, or stop gate; investigate incidents and reassess after material changes.
 7. **Review or retire:** Continue, modify, replace, or decommission based on value, risk, performance, technology currency, and support status. Remove associated data and access when required.
 
 ## Indicative Roadmap
@@ -104,7 +110,7 @@ This roadmap is a sequencing proposal, not a committed delivery plan. Priorities
 ### Establish Direction
 
 * Inventory active, planned, and exploratory AI use cases, platforms, models, and AI code-assist tools.
-* Define risk classes, lifecycle gates, decision rights, exception handling, and an enterprise intake process.
+* Operationalize the value-led intake, prioritization, and lifecycle gates, including risk classes, decision rights, and exception handling.
 * Agree selection criteria and publish initial reference patterns for model access, RAG, and bounded agents.
 * Confirm ownership and delivery alignment between Enterprise AI Architecture, the CoE, portfolios, and practice architects.
 
@@ -126,7 +132,7 @@ This roadmap is a sequencing proposal, not a committed delivery plan. Priorities
 
 Establish baselines before setting numerical targets. Review a balanced set of measures so adoption or speed does not outweigh safety or value.
 
-* **Value:** Use cases with a named business owner, defined outcome, baseline, and validated benefit.
+* **Value:** Use cases with a named business owner, defined outcome, baseline, validated benefit, and estimate-to-actual comparison.
 * **Delivery:** Time from intake to production, proportion of pilots that reach production, and reuse of shared patterns or services.
 * **Trust:** Production use cases with current risk classification, completed evaluations, approved data use, monitoring, and required human oversight.
 * **Operations:** Reliability, latency, incident trends, recovery and rollback readiness, and time to detect and resolve issues.

@@ -10,6 +10,8 @@ Adopt a federated, platform-led model: Enterprise Architecture defines standards
 
 See the [detailed enterprise AI vision and strategy](docs/enterprise-ai-vision-and-strategy.md) for strategic principles, capability priorities, governance, and roadmap.
 
+Use the [AI use-case intake and value realization playbook](docs/ai-use-case-intake-and-value-realization.md) to capture baselines, estimate and prioritize value, and compare pilot or production results with the original estimate.
+
 ## How to Propose a New Standard
 1. Copy `docs/adr/templates/adr-template.md` to `docs/adr/XXXX-your-title.md`.
 2. Fill out all sections, including security and cost trade-offs.
